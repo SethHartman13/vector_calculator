@@ -1,0 +1,75 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'global.css' %}">
+    <title>2 Equation Simultaneous Solver</title>
+</head>
+
+<body class="grid_layout_calc">
+    <script src="{% static '/js2/main.js' %}" type="module"></script>
+
+    <main id="calc_head">
+        <h1>
+            2 Equation Simultaneous Solver 
+        </h1>
+    </main>
+    <div class="calc_top_left">
+        <h2>Fa:</h2>
+        <div>
+            <label for="Ax">Ax:</label>
+            <input type="text" id="Ax" name="Ax" />
+        </div>
+        <div>
+            <label for="Ay">Ay:</label>
+            <input type="text" id="Ay" name="Ay" />
+        </div>
+    </div>
+
+    <div class="calc_top_right">
+        <h2>Fb:</h2>
+        <div>
+            <label for="Bx">Bx:</label>
+            <input type="text" id="Bx" name="Bx" />
+        </div>
+        <div>
+            <label for="By">By:</label>
+            <input type="text" id="By" name="By" />
+        </div>
+
+    </div>
+
+    <div class="calc_bottom_left">
+        <h2>Constants:</h2>
+        <div>
+            <label for="X">X:</label>
+            <input type="text" id="X" name="X" />
+        </div>
+        <div>
+            <label for="Y">Y:</label>
+            <input type="text" id="Y" name="Y" />
+        </div>
+    </div>
+
+    <div class="calc_bottom_right">
+        <div>
+            <input type="button" id="calculate" value="calculate" />
+        </div>
+        <h2>Answers:</h2>
+        <div>
+            <label for="Fa">Fa:</label>
+            <input type="text" id="Fa" name="Fa" disabled />
+        </div>
+        <div>
+            <label for="Fb">Fb:</label>
+            <input type="text" id="Fb" name="Fb" disabled />
+        </div>
+    </div>
+</body>
+
+</html>
