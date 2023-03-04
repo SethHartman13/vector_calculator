@@ -30,6 +30,8 @@ Python
 JavaScript
 - none
 
+HTML/CSS
+
 # Useful Websites
 
 * [Java T Point](https://www.javatpoint.com/django-static-files-handling)
