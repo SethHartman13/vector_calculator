@@ -29,7 +29,6 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -37,6 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    # apps that I built
     'vector_calc_3.apps.VectorCalc3Config',
     'vector_calc_2.apps.VectorCalc2Config',
     'landing.apps.LandingConfig',
@@ -108,7 +109,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'MST'
+TIME_ZONE = 'US/Mountain'
 
 USE_I18N = True
 
@@ -118,8 +119,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
+# static file within each app will hold each app-based static files
 STATIC_URL = 'static/'
 
+# staticfiles file will hold project-based static files
 STATICFILES_DIRS = [
     BASE_DIR / 'staticfiles'
 ]
