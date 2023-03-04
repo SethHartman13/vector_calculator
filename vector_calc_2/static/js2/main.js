@@ -40,7 +40,6 @@ function outputAnswer(finalanswers) {
 }
 
 function mainProgram() {
-    console.log("Ping")
     let matrix = grabInputs();
     let constmatrix = grabConstants();
 
